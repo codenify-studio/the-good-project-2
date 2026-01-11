@@ -69,6 +69,7 @@ gsap.to(".nav-element .nav-links", {
 function videoconAnimation() {
   var videocon = document.querySelector("#video-container");
   var playbtn = document.querySelector("#play");
+  var video = document.querySelector("#banner-video");
 
   // videocon.addEventListener("mouseenter", function(){
   //     playbtn.style.opacity = 1
@@ -89,10 +90,20 @@ function videoconAnimation() {
   });
   videocon.addEventListener("mousemove", function (dets) {
     gsap.to(playbtn, {
-      left: dets.x - 70,
+      left: dets.x - 50,
       top: dets.y - 80,
     });
   });
+  // playbtn.addEventListener("click", function(){
+  //   if(video.paused){
+  //     video.play();
+  //     playbtn.innerText = "Pause";
+  //   }
+  //   else{
+  //     video.pause();
+  //     playbtn.innerText = "Play";
+  //   }
+  // });
 }
 videoconAnimation();
 
@@ -216,15 +227,18 @@ toggleAnimation();
 //   },
 // });
 
-
 const input = document.querySelector(".newsletter-input");
 const button = document.querySelector(".reset-button");
 
-input.addEventListener("input", function(){
-  if (this.value.length > 0){
+input.addEventListener("input", function () {
+  if (this.value.length > 0) {
     button.classList.add("active");
-  }
-  else{
+  } else {
     button.classList.remove("active");
   }
-})
+});
+
+window.addEventListener("load", () => locoScroll.update());
+document
+  .querySelectorAll("img")
+  .forEach((img) => img.addEventListener("load", () => locoScroll.update()));

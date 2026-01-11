@@ -9,10 +9,11 @@
       href="./assets/media/img-fa-icon.png"
       type="image/x-icon"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="assets/css/locomotive-scroll.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -22,6 +23,10 @@
   </head>
   <body>
     <!-- Cursor Animation -->
+    <!-- <div class="ctm-scroll-top">
+      <i class="ri-arrow-up-long-line"></i>
+    </div> -->
+    <!-- <a href="#main" class="ctm-scroll-top"><i class="ri-arrow-up-long-line"></i></a> -->
     <div id="cursor">
       <!-- <div class="cursor-point"></div> -->
     </div>
@@ -179,7 +184,8 @@
         </div>
       </div>
     </header>
-    <div id="main">
+
+    <div id="main" data-scroll-container>
       <!-- Banner Section -->
       <div id="page1">
         <h1>Change</h1>
@@ -191,7 +197,7 @@
             autoplay
             loop
             muted
-            src="./assets/media/banner-video.mp4"
+            src="./assets/media/banner-video-2.mp4"
           ></video>
         </div>
       </div>
@@ -215,8 +221,8 @@
           <img
             data-scroll
             data-scroll-speed="1"
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/436dc55529165898c0ecc8299c9ef541252d38dc-3490x5236.jpg/EDITED-AB5I5446_PhotoCredit-Nikki-To.jpg?rect=0,1090,3490,4146&fp-x=0.5&fp-y=0.6040625&w=1280&h=2133&fit=crop&crop=focalpoint&auto=format"
-            alt=""
+            src="./assets/media/service-1.jpeg"
+            alt="" loading="lazy"
           />
           <div data-scroll data-scroll-speed="-2" class="details">
             <i class="ri-circle-fill"></i>
@@ -227,19 +233,13 @@
           <div data-scroll data-scroll-speed="-2" class="details-collap">
             <div class="details-pill">
               <div class="details-pill1">
-                <img
-                  src="https://cdn.sanity.io/images/w8f1ak3c/production/70ade7d828617c61869e7760e611886a2292627c-3635x5453.png/AB5I6134_Katherine_Sabbath_Chocolate_NikkiTo.png?rect=0,734,3635,4719&fp-x=0.5&fp-y=0.5673345588235295&w=320&h=415&fit=crop&crop=focalpoint&auto=format"
-                  alt=""
-                />
+                <img src="./assets/media/product-1.png" alt="" loading="lazy" />
                 <div class="pill-text">
                   Katherine Sabbath x Two Good Chilli Chocolate Bar
                 </div>
               </div>
               <div class="details-pill1">
-                <img
-                  src="https://cdn.sanity.io/images/w8f1ak3c/production/70ade7d828617c61869e7760e611886a2292627c-3635x5453.png/AB5I6134_Katherine_Sabbath_Chocolate_NikkiTo.png?rect=0,734,3635,4719&fp-x=0.5&fp-y=0.5673345588235295&w=320&h=415&fit=crop&crop=focalpoint&auto=format"
-                  alt=""
-                />
+                <img src="./assets/media/product-2.png" alt="" loading="lazy" />
                 <div class="pill-text">
                   Katherine Sabbath x Two Good Chilli Chocolate Bar
                 </div>
@@ -251,8 +251,8 @@
           <img
             data-scroll
             data-scroll-speed="1"
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/a62ad1ed55ff4298e9b1e4e15952a777d4fa8376-4000x6000.jpg/TwoGood_JenShaw_Photo:KatieKarrs.jpg?rect=0,41,4000,5919&w=640&h=947&fit=min&auto=format"
-            alt=""
+            src="./assets/media/service-2.jpeg"
+            alt="" loading="lazy"
           />
           <div data-scroll data-scroll-speed="-2" class="details">
             <i class="ri-circle-fill"></i>
@@ -263,19 +263,13 @@
           <div data-scroll data-scroll-speed="-2" class="details-collap">
             <div class="details-pill">
               <div class="details-pill1">
-                <img
-                  src="https://cdn.sanity.io/images/w8f1ak3c/production/70ade7d828617c61869e7760e611886a2292627c-3635x5453.png/AB5I6134_Katherine_Sabbath_Chocolate_NikkiTo.png?rect=0,734,3635,4719&fp-x=0.5&fp-y=0.5673345588235295&w=320&h=415&fit=crop&crop=focalpoint&auto=format"
-                  alt=""
-                />
+                <img src="./assets/media/product-3.png" alt="" loading="lazy" />
                 <div class="pill-text">
                   Katherine Sabbath x Two Good Chilli Chocolate Bar
                 </div>
               </div>
               <div class="details-pill1">
-                <img
-                  src="https://cdn.sanity.io/images/w8f1ak3c/production/70ade7d828617c61869e7760e611886a2292627c-3635x5453.png/AB5I6134_Katherine_Sabbath_Chocolate_NikkiTo.png?rect=0,734,3635,4719&fp-x=0.5&fp-y=0.5673345588235295&w=320&h=415&fit=crop&crop=focalpoint&auto=format"
-                  alt=""
-                />
+                <img src="./assets/media/product-4.png" alt="" loading="lazy" />
                 <div class="pill-text">
                   Katherine Sabbath x Two Good Chilli Chocolate Bar
                 </div>
@@ -287,8 +281,8 @@
           <img
             data-scroll
             data-scroll-speed="1"
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/3b7505a10fa639d6496e673996e333930257f5f8-786x1106.png/Screenshot%202025-09-04%20at%201.59.42%E2%80%AFPM.png?rect=62,0,663,1106&w=640&h=1067&fit=min&auto=format"
-            alt=""
+            src="./assets/media/service-3.jpeg"
+            alt="" loading="lazy"
           />
           <div data-scroll data-scroll-speed="-2" class="details">
             <i class="ri-circle-fill"></i>
@@ -299,19 +293,13 @@
           <div data-scroll data-scroll-speed="-2" class="details-collap">
             <div class="details-pill">
               <div class="details-pill1">
-                <img
-                  src="https://cdn.sanity.io/images/w8f1ak3c/production/63474079ab0c7723b75bd63b24d8bbc652349640-1408x1408.png/Cleanse%20&%20Nourish%20Hand%20Wash%20Two%20Good%20Co.png?w=320&h=320&auto=format"
-                  alt=""
-                />
+                <img src="./assets/media/product-2.png" alt="" loading="lazy" />
                 <div class="pill-text">
                   Katherine Sabbath x Two Good Chilli Chocolate Bar
                 </div>
               </div>
               <div class="details-pill1">
-                <img
-                  src="https://cdn.sanity.io/images/w8f1ak3c/production/63474079ab0c7723b75bd63b24d8bbc652349640-1408x1408.png/Cleanse%20&%20Nourish%20Hand%20Wash%20Two%20Good%20Co.png?w=320&h=320&auto=format"
-                  alt=""
-                />
+                <img src="./assets/media/product-4.png" alt="" loading="lazy" />
                 <div class="pill-text">
                   Katherine Sabbath x Two Good Chilli Chocolate Bar
                 </div>
@@ -341,40 +329,28 @@
       <!-- Product Section -->
       <div id="page3">
         <div class="product" id="product-card1">
-          <img
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/e4a1beebdbec30ca6da39085a3a2f2067eab7755-3325x4987.png/AB5I5892_Comfort_NikkiTo.png?rect=0,305,3325,4108&fp-x=0.5220588235294119&fp-y=0.4718419117647058&w=640&h=791&fit=crop&crop=focalpoint&auto=format"
-            alt=""
-          />
+          <img src="assets/media/product-1.png" alt="" loading="lazy" />
           <h4>Sweet Memories Cookbook</h4>
           <span>$74</span>
         </div>
         <div class="product" id="product-card2">
-          <img
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/cfb23f577729da7cc50416e62bb918edbb000caa-3598x5397.png/AB5I5875_Nostalgia_NikkiTo.png?rect=0,727,3598,4062&fp-x=0.5&fp-y=0.5110183823529412&w=640&h=723&fit=crop&crop=focalpoint&auto=format"
-            alt=""
-          />
+          <img src="assets/media/product-2.png" alt="" loading="lazy" />
           <h4>Sweet Memories Cookbook</h4>
           <span>$74</span>
         </div>
         <div class="product" id="product-card3">
-          <img
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/99866b12faf44f7490e6037dc197947334ce0a72-1408x1408.png/Nourish%20&%20Soothe%20Hand%20Lotion%20Two%20Good%20Co.png?w=640&h=640&auto=format"
-            alt=""
-          />
+          <img src="assets/media/product-3.png" alt="" loading="lazy" />
           <h4>Sweet Memories Cookbook</h4>
           <span>$74</span>
         </div>
         <div class="product" id="product-card4">
-          <img
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/7d180ca25ade6277a215b634318056d551de9da8-5000x5000.png/Website%20Products%20(5).png?w=640&h=640&auto=format"
-            alt=""
-          />
+          <img src="assets/media/product-4.png" alt="" loading="lazy" />
           <h4>Sweet Memories Cookbook</h4>
           <span>$74</span>
         </div>
       </div>
       <!-- Review Section -->
-      <div id="page4">
+      <div data-scroll data-scroll-speed="1" id="page4">
         <div class="divider-line">
           <span>Buy Good</span>
           <span>Do Good</span>
@@ -412,16 +388,16 @@
           <img
             data-scroll
             data-scroll-speed="2"
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/943f8f43b76b4e030f41deddca1edd44170fee39-5504x8256.jpg/Christina-Maria-Jes-Lindsay-9143.jpg?fp-x=0.5&fp-y=0.5&w=640&h=947&fit=crop&crop=focalpoint&auto=format"
-            alt=""
+            src="./assets/media/our-impact-1.jpeg"
+            alt="" loading="lazy"
           />
         </div>
         <div id="elem6" class="elem">
           <img
             data-scroll
             data-scroll-speed="2"
-            src="https://cdn.sanity.io/images/w8f1ak3c/production/84da7b8b510e006ce0ca22769d93bb6c044945f6-5504x8256.jpg/Patricia-Work-Work-Good-Stories-Two-Good-Co.jpg?rect=0,56,5504,8144&w=640&h=947&fit=min&auto=format"
-            alt=""
+            src="./assets/media/our-impact-2.jpeg"
+            alt="" loading="lazy"
           />
         </div>
       </div>
@@ -521,6 +497,7 @@
           </div>
           <div class="footer-menu-child">
             <p>THE NITTY GRITTIES</p>
+
             <ul class="social-links">
               <a href="#">Good Things FAQs</a>
               <a href="#">Good Food FAQs</a>
@@ -532,6 +509,7 @@
           </div>
         </div>
         <div class="footer-info">
+          <span>Acknowledgement of Country</span>
           <p>
             We are proud and privileged to have our home on this land, and to be
             able to continue the long tradition of community coming together
@@ -548,19 +526,25 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+
+    <script src="assets/js/locomotive-scroll.js"></script>
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
       integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-    <script
+    ></script> -->
+
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script> -->
+    <script src="assets/js/gsap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
