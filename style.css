@@ -735,7 +735,7 @@ body.active .mega-menu-parent {
 .footer-info span {
   display: none;
 }
-.ctm-scroll-top{
+.ctm-scroll-top {
   width: 80px;
   height: 80px;
   background: #fff;
@@ -751,5 +751,44 @@ body.active .mega-menu-parent {
   bottom: 30px;
   right: 30px;
   transition: 0.35s;
-  pointer-events: none;
+  /* pointer-events: none; */
+  cursor: pointer;
+}
+
+.lerp-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.25rem;
+  line-height: 1.1;
+}
+.lerp-wrap span {
+  position: relative;
+  margin-left: -4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: clamp(32px, 3vw, 8vw); */
+}
+.text-gap {
+  width: 10px;
+}
+.gift-for-good p {
+  /* margin-top: -35px; */
+}
+.about-content .common-heading {
+  overflow: hidden;
+}
+
+.about-content .common-heading span {
+  display: inline-block;
+  transform: translateY(120%);
+  transition: 0.35s;
+}
+.about-paragraph p {
+  overflow: hidden;
+}
+.about-paragraph p span {
+  display: inline-block;
+  /* transform: translateY(120%); */
+  /* transition: 0.35s; */
 }

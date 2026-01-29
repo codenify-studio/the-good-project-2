@@ -41,6 +41,12 @@ function locomotiveScrollTrigger() {
 
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
+
+  document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".ctm-scroll-top").addEventListener("click", () => {
+    locoScroll.scrollTo("#page2");
+  });
+});
 }
 locomotiveScrollTrigger();
 
@@ -156,6 +162,7 @@ function cursorAnimation() {
   });
 }
 cursorAnimation();
+
 document.querySelectorAll(".details").forEach(function (boxhover) {
   boxhover.addEventListener("mouseenter", function () {
     boxhover.parentElement.classList.add("active");
@@ -238,7 +245,96 @@ input.addEventListener("input", function () {
   }
 });
 
+window.addEventListener("load", () => {
+  locoScroll.update();
+});
+
 window.addEventListener("load", () => locoScroll.update());
 document
   .querySelectorAll("img")
   .forEach((img) => img.addEventListener("load", () => locoScroll.update()));
+
+function splitText() {
+  document.querySelectorAll(".split-text").forEach((el) => {
+    let text = el.textContent;
+    el.innerHTML = text
+      .split(" ")
+      .map((word) => `<span class="word">${word}&nbsp;</span>`)
+      .join("");
+  });
+}
+
+// let locoScroll;
+
+// locoScroll = new LocomotiveScroll({
+//   el: document.querySelector("#main"),
+//   smooth: true,
+// });
+
+
+
+function pageAnimation() {
+  var h1 = document.querySelector("#textAnimation");
+  var h1Content = h1.textContent.trim();
+  var splitText = h1Content.split("");
+  var clutter = "";
+
+  splitText.forEach(function (words) {
+    if (words === " ") {
+      clutter += `<span>&nbsp;</span>`;
+    } else {
+      clutter += `<span>${words}</span>`;
+    }
+  });
+  h1.innerHTML = clutter;
+
+  gsap.to(".common-heading span", {
+    y: 0,
+    duration: 1.2,
+    ease: "power4.out",
+    stagger: 1.2,
+    scrollTrigger: {
+      trigger: ".about-us-sec",
+      scroller: "#main",
+      start: "top 90%",
+      end: "top 87%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+}
+pageAnimation();
+
+function paragraphAnimation(){
+  var text = document.querySelector(".about-paragraph p");
+var textWord = text.textContent;
+var splitWord = textWord.split("");
+var flutter = "";
+splitWord.forEach(function (melon) {
+  if (melon === " ") {
+    flutter += `<span>&nbsp;</span>`;
+  } else {
+    flutter += `<span>${melon}</span>`;
+  }
+});
+text.innerHTML = flutter;
+
+gsap.to(".about-paragraph p span", {
+  y: 0,
+});
+
+gsap.from(".about-paragraph p span", {
+    y: 50,
+    duration: 1.2,
+    ease: "power4.out",
+    stagger: 0.05,
+    scrollTrigger: {
+      trigger: ".about-us-sec",
+      scroller: "#main",
+      start: "top 90%",
+      end: "top 87%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+}
